@@ -1,0 +1,164 @@
+Exemplo2 formulário Daas21
+
+
+<div class="wpb_wrapper">
+			<div class="space20"></div><div class="space20"></div>
+		</div> 
+	</div> 
+</div></div>
+			
+		
+		
+	</article><!-- #post -->
+				
+			            
+    <form id="vacation" name="vacation" method="post" action="/resultado-questionario-phq-9" onsubmit="return show_object();">
+    <span class="label label-default">1</span><span class="question">Tive pouco interesse ou prazer em fazer coisas</span><br><br>
+    
+    <input type="radio" name="poll1" value="0" id="poll" /><span class="radio">Nunca</span>
+    <input type="radio" name="poll1" value="1" id="poll" /><span class="radio">Em vários dias</span>
+    <input type="radio" name="poll1" value="2" id="poll" /><span class="radio">Em mais de metade dos dias</span>
+    <input type="radio" name="poll1" value="3" id="poll" /><span class="radio">Em quase todos os dias</span>
+    <span id="errgen">Seleccione um dos campos</span><br>
+        <hr>
+  <!-- -------------------------------------------------------------------------- -->
+  <span class="label label-default">2</span><span class="question">Senti desânimo, desalento ou falta de esperança</span><br><br>
+    <input type="radio" name="poll2" value="0" /><span class="radio">Nunca</span>
+    <input type="radio" name="poll2" value="1" /><span class="radio">Em vários dias</span>
+    <input type="radio" name="poll2" value="2" /><span class="radio">Em mais de metade dos dias</span>
+    <input type="radio" name="poll2" value="3" /><span class="radio">Em quase todos os dias</span>
+   <span id="errgen1" class="error">Selecione um dos campos</span></br>
+        <hr>
+    <!-- -------------------------------------------------------------------------- -->
+  <span class="label label-default">3</span><span class="question">Tive dificuldade em adormecer ou em dormir sem interrupções ou dormi demais</span><br><br>
+    <input type="radio" name="poll3" value="0" /><span class="radio">Nunca</span>
+    <input type="radio" name="poll3" value="1" /><span class="radio">Em vários dias</span>
+    <input type="radio" name="poll3" value="2" /><span class="radio">Em mais de metade dos dias</span>
+    <input type="radio" name="poll3" value="3" /><span class="radio">Em quase todos os dias</span>
+   <span id="errgen2" class="error">Selecione um dos campos</span></br>
+    <hr>
+  <!-- -------------------------------------------------------------------------- -->
+  <span class="label label-default">4</span><span class="question">Senti cansaço ou falta de energia</span><br><br>
+    <input type="radio" name="poll4" value="0" /><span class="radio">Nunca</span>
+    <input type="radio" name="poll4" value="1" /><span class="radio">Em vários dias</span>
+    <input type="radio" name="poll4" value="2" /><span class="radio">Em mais de metade dos dias</span>
+    <input type="radio" name="poll4" value="3" /><span class="radio">Em quase todos os dias</span>
+   <span id="errgen3" class="error">Selecione um dos campos</span></br>
+<hr>
+  <!-- -------------------------------------------------------------------------- -->
+  <span class="label label-default">5</span><span class="question">Tive falta ou excesso de apetite</span><br><br>
+    <input type="radio" name="poll5" value="0" /><span class="radio">Nunca</span>
+    <input type="radio" name="poll5" value="1" /><span class="radio">Em vários dias</span>
+    <input type="radio" name="poll5" value="2" /><span class="radio">Em mais de metade dos dias</span>
+    <input type="radio" name="poll5" value="3" /><span class="radio">Em quase todos os dias</span>
+   <span id="errgen4" class="error">Selecione um dos campos</span></br>
+<hr>
+  <!-- -------------------------------------------------------------------------- -->
+  <span class="label label-default">6</span><span class="question">Senti que não gosto de mim próprio(a) ou que sou um(a) falhado(a) ou me desiludi a mim próprio(a) ou á minha família</span><br><br>
+    <input type="radio" name="poll6" value="0" /><span class="radio">Nunca</span>
+    <input type="radio" name="poll6" value="1" /><span class="radio">Em vários dias</span>
+    <input type="radio" name="poll6" value="2" /><span class="radio">Em mais de metade dos dias</span>
+    <input type="radio" name="poll6" value="3" /><span class="radio">Em quase todos os dias</span>
+   <span id="errgen5" class="error">Selecione um dos campos</span></br>
+<hr>
+  <!-- -------------------------------------------------------------------------- -->
+  <span class="label label-default">7</span><span class="question">Tive dificuldade em concentrar-me nas coisas, como ao ler o jornal ou ver televisão</span><br><br>
+    <input type="radio" name="poll7" value="0" /><span class="radio">Nunca</span>
+    <input type="radio" name="poll7" value="1" /><span class="radio">Em vários dias</span>
+    <input type="radio" name="poll7" value="2" /><span class="radio">Em mais de metade dos dias</span>
+    <input type="radio" name="poll7" value="3" /><span class="radio">Em quase todos os dias</span>
+   <span id="errgen6" class="error">Selecione um dos campos</span></br>
+<hr>
+  <!-- -------------------------------------------------------------------------- -->
+  <span class="label label-default">8</span><span class="question">Movimentei-me ou falei tão lentamente que outras pessoas poderão ter notado. Ou o oposto: estive agitado(a) a ponto de andar de um lado para o   outro muito mais do que é habitual.</span><br><br>
+    <input type="radio" name="poll8" value="0" /><span class="radio">Nunca</span>
+    <input type="radio" name="poll8" value="1" /><span class="radio">Em vários dias</span>
+    <input type="radio" name="poll8" value="2" /><span class="radio">Em mais de metade dos dias</span>
+    <input type="radio" name="poll8" value="3" /><span class="radio">Em quase todos os dias</span>
+   <span id="errgen7" class="error">Selecione um dos campos</span></br>
+<hr>
+  <!-- -------------------------------------------------------------------------- -->
+  <span class="label label-default">9</span><span class="question">Pensei que seria melhor estar morto(a) ou em magoar-me a mim próprio de alguma forma.</span><br><br>
+    <input type="radio" name="poll9" value="0" /><span class="radio">Nunca</span>
+    <input type="radio" name="poll9" value="1" /><span class="radio">Em vários dias</span>
+    <input type="radio" name="poll9" value="2" /><span class="radio">Em mais de metade dos dias</span>
+    <input type="radio" name="poll9" value="3" /><span class="radio">Em quase todos os dias</span>
+   <span id="errgen8" class="error">Selecione um dos campos</span></br>
+<hr>
+    <input type="submit" class="btn poll-btn" id="btn" value="Ver Resultado" /> 
+    </form>
+
+</div><!-- #content -->
+
+	</div><!-- #primary -->
+
+
+
+
+
+
+
+1Tive pouco interesse ou prazer em fazer coisas
+
+Nunca Em vários dias Em mais de metade dos dias Em quase todos os dias
+2Senti desânimo, desalento ou falta de esperança
+
+Nunca Em vários dias Em mais de metade dos dias Em quase todos os dias
+3Tive dificuldade em adormecer ou em dormir sem interrupções ou dormi demais
+
+Nunca Em vários dias Em mais de metade dos dias Em quase todos os dias
+4Senti cansaço ou falta de energia
+
+Nunca Em vários dias Em mais de metade dos dias Em quase todos os dias
+5Tive falta ou excesso de apetite
+
+Nunca Em vários dias Em mais de metade dos dias Em quase todos os dias
+6Senti que não gosto de mim próprio(a) ou que sou um(a) falhado(a) ou me desiludi a mim próprio(a) ou á minha família
+
+Nunca Em vários dias Em mais de metade dos dias Em quase todos os dias
+7Tive dificuldade em concentrar-me nas coisas, como ao ler o jornal ou ver televisão
+
+Nunca Em vários dias Em mais de metade dos dias Em quase todos os dias
+8Movimentei-me ou falei tão lentamente que outras pessoas poderão ter notado. Ou o oposto: estive agitado(a) a ponto de andar de um lado para o outro muito mais do que é habitual.
+
+Nunca Em vários dias Em mais de metade dos dias Em quase todos os dias
+9Pensei que seria melhor estar morto(a) ou em magoar-me a mim próprio de alguma forma.
+
+Nunca Em vários dias Em mais de metade dos dias Em quase todos os dias
+
+
+
+
+
+Instrumento de medida
+Foi utilizada a versão reduzida da Escala de Depressão, Ansiedade e Estresse (DASS-21)3
+, cujos itens encontram-se divididos em três fatores (Itens Depressão: 3, 5, 10, 13, 16, 17,
+21; Ansiedade: 2, 4, 7, 9, 15, 19, 20; Estresse: 1, 6, 8, 11, 12, 14,
+18). A escala de resposta aos itens é do tipo Likert de quatro
+pontos variando de 0 (não se aplicou de maneira alguma) a
+3 (aplicou-se muito ou na maioria do tempo). 
+
+
+Tabela 2. Pontos de corte (escore médio) obtidos a partir dos
+percentis da escala de resposta aos itens da Escala de Depressão,
+Ansiedade e Estresse (DASS-21), propostos por Lovibond e
+Lovibond
+Fator DASS Percentil Escore médio Classificação
+Depressão
+Ansiedade
+Estresse
+< P78 < 2,34 Normal
+P78 |— P87 2,34 |— 2,61 Leve
+P87 |— P95 2,61 |— 2,85 Moderada
+P95 |— P98 2,85 |— 2,94 Severa
+≥ P98 ≥ 2,94 Extremamente severa
+
+		Z Escore 	Percentual 	DEPRESSÃO 	ANSIEDADE 	ESTRESSE
+Normal/Leve 	<0,5 		0-78 		0-9 		0-7 		0-14
+Mínimo 		0,5-1,0 	78-87 		10-13 		8-9 1		5-18
+Moderado 	1,0-2,0 	87-95 		14-20 		10-14 		19-25
+Grave 		2,0-3,0 	95-98 		21-27 		15-19 		26-33
+Muito Grave >	3,0 		98-100 		28+ 		20+ 		34+
+
+
+

@@ -1,0 +1,49 @@
+
+body {
+  background-color: #1E90FF;
+  padding: 100px;
+  text-align: center;
+  min-height: 100vh
+}
+
+.container {
+  width: 120vh;
+  height: 190px;
+  background-color:#1E90FF;
+  padding: 10px;
+ border-left: 3px solid#1E90FF;
+  
+}
+
+
+.quote-text{
+	min-height: 20vh;
+}
+
+.container h1{
+	font-size: 20px;
+	text-align: left;
+}
+
+.container p{
+	text-transform: capitalize;
+	color: #0000FF;
+	text-align: right;
+	font-style: italic;
+	font-size: 30px;
+}
+
+#btn{
+	margin-top: 110px;
+	font-size: 15px;
+	padding: 10px 20px;
+	background-color: #0000FF;
+	color: #191716;
+	text-transform: uppercase;
+
+}
+
+#btn:hover{
+	color: #191716;
+	background-color: #f15025;
+}

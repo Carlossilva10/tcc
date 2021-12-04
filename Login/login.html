@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="estiloL.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+</head>
+<body>
+   
+  
+<div class="container">
+        <h2>Login</h2>
+
+    <div class="body"></div>
+        <div class="grad"></div>
+        <div class="header">
+
+            
+    </div>
+    <br>
+    <form name="login">
+    <div class="login">
+
+        <h3>Nome:</h3>
+        <input type="text" placeholder="username" name="userid"><br>
+
+        <h3>Senha:</h3>
+        <input type="password" placeholder="password" name="pswrd"><br>
+        
+        <input type="button" onclick="check(this.form)" value="Entrar"><br>
+        
+    </div>    
+    </form>        
+
+    <script language="javascript">
+        function check(form)
+        {
+            if(form.userid.value == "carlos" && form.pswrd.value == "123")
+            {
+                window.open('file:///C:/Users/carlossilva/Desktop/TESTE%20PARA%20QUESTIONARIO/questionario.html')
+            }
+            else
+            {
+                alert("The username and password you entered dont match")
+            }
+        }
+    </script>
+<br>
+<br>
+<div class="links-uteis">
+    <a href=""><p>Esqueceu a sua senha ?</p></a>
+    <p><a href="file:///C:/Users/carlossilva/Desktop/TESTE%20PARA%20QUESTIONARIO/Cadastro.html">Ainda não sou cadastrado</a></p>
+    
+</div>
+
+</div>
+
+
+</body>
+</html>
