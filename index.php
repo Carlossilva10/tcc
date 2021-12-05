@@ -1,236 +1,158 @@
 <!doctype html>
 <html lang="en" class="no-js">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website Template with Sticky Sidebar</title>
-    <meta name="description" content="Free responsive website HTML theme with sticky sidebar for both desktop and mobile. ">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simple Website Template with Sticky Sidebar</title>
+	<meta name="description" content="Free responsive website HTML theme with sticky sidebar for both desktop and mobile. ">
+	<!-- Importante para habilitar os recursos de Responsividade em conjunto com o CSS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<!-- Importante para habilitar os recursos de Responsividade em conjunto com o CSS -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		
-		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="js/bootstrap.js"></script>
-  		        
-  		<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/style.css">
 
-
-<style>
-
-body{color:black}
-
-</style>
-
-
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
 </head>
+
 <body>
+	<?php
+	include './Navbar.php';
+	?>
+	<div id="wrapall">
+		<div id="sidebar">
+			<div id="stickThis">
+				<div id="sidebarContent">
+					<aside>
+						<div>
+							<img src="Imagens\cadastro.jfif" width="260" class="text-end rounded-3">
+							<nav>
+								<ul>
+									<li>
+										<a href="./cadastro.php" class="btn btn-light mt-2">Faça aqui seu Cadastro</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
 
+						<div>
+							<img src="Imagens\Medico1.jfif" width="260" class="text-end rounded-3">
+							<nav>
+								<ul>
+									<li><a href="./Especialista.html" class="btn btn-light mt-2">Procure um especialista</a></li>
+								</ul>
+							</nav>
+						</div>
 
-<header>
-	
+						<div>
+							<img src="Imagens\Depoimento2.jfif" width="260" class="text-end rounded-3">
+							<nav>
+								<ul>
+									<li><a href="./Depoimentos.html" class="btn btn-light mt-2">Depoimentos</a></li>
+								</ul>
+							</nav>
+						</div>
 
-	<div id="header Left">
-		<img src="Imagens\bomhumor.png"  width="210" height="150" align= "left"> <br/> <br/>
-		<h1><a href= "http://localhost/TCC/login.php">
-			<div height="100" style="background-color: blue;line-height: 50px;text-align: right;">
-				<p style="color: white">Login</p>
-			</div>
-			</a> </h1
-</div
+						<div>
+							<img src="Imagens\Livro1.jfif" width="260" class="text-end rounded-3">
+							<nav>
+								<ul>
+									<li><a href="./Livros.html" class="btn btn-light mt-2">Encontre um livro</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div>
+							<a href="./Atendimento.html">
+								<img src="Imagens\informação188.jpg" width="260" class="text-end rounded-3"></a>
+						</div>
 
-
-		<div id="headerRight">
-			<nav>  
-				<ul>
-					<li><a href="http://localhost/TCC/Homem.html">Homem</a></li>
-					<li><a href="http://localhost/TCC/Mulher.html">Mulher</a></li> 
-					<li><a href="http://localhost/TCC/Adolecente.html">Adolecente</a></li>
-					<li><a href="http://localhost/TCC/cadastro.php">Cadastro</a></li>
-					<li><a href="http://localhost/TCC/Depoimentos.html">Depoimentos</a></li>
-					<li><a href="http://localhost/TCC/Especialista.html">Especialista</a></li>
-                	<li><a href="http://localhost/TCC/Perguntas.html">Perguntas Frequentes</a></li>
-                	<li><a href="http://localhost/TCC/Atividades.html">Atividades</a></li>
-					<li><a href="http://localhost/TCC/Livros.html">Livros</a></li>
-					<li><a href="http://localhost/TCC/Frases.html">Frases Motivadoras</a></li>
-					<li><a href="http://localhost/TCC/Imagens.html">Imagens divertidas</a></li>
-					<li><a href="http://localhost/TCC/Alimentos.html">Alimentos</a></li>
-					<li><a href="http://localhost/TCC/Atendimento.html">Atendimento</a></li>
-					<li><a href="http://localhost/TCC/Links.html">Links Úteis</a></li>
-					<li><a href="http://localhost/TCC/login.php">Questionário DASS-21</a></li>
-					
-					
-				</ul>
-	</div>
-
-</header>
-
-<div id="wrapall">
-	<div id="sidebar">
-		<div id="stickThis">
-			<div id="sidebarContent">
-				
-				<aside>
-
-					<div>
-					<img src="Imagens\cadastro.jfif"  width="280" height="200" align="left">
-					<nav>  
-						<ul>
-							<li><a href="http://localhost/TCC/cadastro.php">Faça aqui seu Cadastro</a></li>
-						</ul>
-					</nav					
-					</div>
-
-					<div>
-					<img src="Imagens\Medico1.jfif"  width="280" height="200" align="left">
-					<nav>  
-						<ul>
-							<li><a href="http://localhost/TCC/Especialista.html">Procure um especialista</a></li>
-						</ul>
-					</nav					
-					</div>
-
-					<div>
-					<img src="Imagens\Depoimento2.jfif"  width="280" height="200" align="left">
-					<nav>  
-						<ul>
-							<li><a href="http://localhost/TCC/Depoimentos.html">Depoimentos</a></li>
-						</ul>
-					</nav					
-					</div>
-
-					<div>
-					<img src="Imagens\Livro1.jfif"  width="280" height="200" align="left">
-					<nav>  
-						<ul>
-							<li><a href="http://localhost/TCC/Livros.html">Encontre um livro</a></li>
-						</ul>
-					</nav					
-					</div>
-
-					
-
-					<div>
-					<a href="http://localhost/TCC/Atendimento.html"><img src="Imagens\informação188.jpg"  width="280" height="90" align="left"></a>
-										
-					</div>
-					
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-				
-					<p><a class="back2Top" href="#">⮝&nbsp;Back to&nbsp;top&nbsp;⮝</a></p>
-				
-					
-				</aside>
-			</div>
-		</div>
-		<div id="stick-here"></div>
-	</div>
-
-	<div id="main">
-		<section id="page">
-			<main>
-
-				<article>
-					<center><h2>O site que te leva ao BOM HUMOR</h2></center>
-
-					<strong>
-					
-						
-						<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; O site Bom humor é composto de páginas que trazem conteúdos de leitura e audio através de poemas, frases motivadoras, músicas e imagens com leveza visual.</p> 
-						 <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; O intuito do site é ajudar a atender todas as expectativas dos usuários e patrocinadores referente a Depressão, a Anciedade e Transtorno depresivo.</p>
-						 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; As pessoas que se sentirem angustiadas, solitárias, depresivas e com raivas poderão atráves deste site encontrar mecanismos para a tranquilidade, 
-						serenidade, e bem estar. &nbsp Tudo isso atráves de imagens, frases motivacionais, musicas, com indicações de livros e profissionais especializados.</p>
-						
-					</strong>
-				</article>
-
-				
-				<article>
-
-					<h2>VOCÊ ACHA QUE ESTÁ ESTRESSADO?</h2>
-				
-					<iframe src ="https://www.youtube.com/embed/_Tlk6e61E6w?autoplay=1&loop=1&autopause=0" 
-					width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
-					</iframe>
-				
-				</article>
-
-
-				<article>
-
-					<center><h2>Depressão e Transtorno no mercado de trabalho</h2></center>
-
-					<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Depressão ou transtorno depressivo é uma doença comum e séria, normalmente é causada por 
-alguma situação perturbadora ou estressante que ocorre na vida, como morte de um familiar, problemas financeiros ou divórcio, 
-pensamentos descontrolados e obsessivos sobre determinada situação ou problema.
-					<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A depressão é responsável por retirar do mercado de trabalho milhares de profissionais todos os anos. Em 2016, 75,3 mil trabalhadores 
-foram afastados em razão do mal, com direito a recebimento de auxílio-doença em casos episódicos ou recorrentes.</p>
-					<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Eles representaram 37,8% de todas as licenças em 2016.</p>
-					<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dessa forma, pode-se observar facilmente como essa doença impacta no desempenho do profissional. Os profissionais com depressão 
-costumam ter as seguintes características:</p>
-
-
-<ul>
-					
-	<li>Atrasos frequentes,</li>
-	<li>Dificuldade em reter e compreender informações,</li>
-	<li>Memória falha,</li>
-	<li>Percalços para executar tarefas,</li>
-	<li>Desânimo para agir em sua função rotineira,</li>
-	<li>Falta de iniciativa,</li>
-	<li>Faltas frequentes, entre outros problemas.</li>
-
-</ul>
-				
-				</article>
-
-
-				<article>
-
-				<div>
-
-					<center><h2>Que tal um PET!</h2></center>
-
-					<img src="Imagens\animal sorrindo19.jfif"  width="300" height="200" align="left">
-					
-					<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Pesquisas e estudos em todo o mundo demonstram que a convivência com os animais traz 
-					tranquilidade e bem-estar às pessoas.  Alexandre Rossi, especialista em comportamento animal 
-					e atualmente com o programa “Missão Pet” no canal a cabo Nat Geo, vivencia de perto essa 
-					interação benéfica....</p> 
-					<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; O contato com os animais aumenta a produção de endorfina no organismo, o hormônio que causa
-					prazer e sensação de bem-estar. Além disso, o convívio com um cão ou gato diminui a pressão 
-					sanguínea, os níveis de colesterol e do estresse e também reduz o risco de problemas 
-					cardiovasculares.... 
-					</p>
-										
+						<p class="mb-2">
+							<a class="back2Top" href="#">
+								⮝&nbsp;Back to&nbsp;top&nbsp;⮝
+							</a>
+						</p>
+					</aside>
 				</div>
-					
+			</div>
+			<div id="stick-here"></div>
+		</div>
 
-				</article>
+		<div id="main">
+			<section id="page">
+				<main>
+					<article>
+						<h1 class="h1">O site que te leva ao BOM HUMOR</h1>
 
+						<p>
+							&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; O site Bom humor é composto de páginas que trazem conteúdos de leitura e audio através de poemas, frases motivadoras, músicas e imagens com leveza visual.
+						</p>
+						<p>
+							&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; O intuito do site é ajudar a atender todas as expectativas dos usuários e patrocinadores referente a Depressão, a Anciedade e Transtorno depresivo.
+						</p>
+						<p>
+							&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; As pessoas que se sentirem angustiadas, solitárias, depresivas e com raivas poderão atráves deste site encontrar mecanismos para a tranquilidade,
+							serenidade, e bem estar. &nbsp Tudo isso atráves de imagens, frases motivacionais, musicas, com indicações de livros e profissionais especializados.
+						</p>
+					</article>
 
+					<article>
+						<h2 class="h2">VOCÊ ACHA QUE ESTÁ ESTRESSADO?</h2>
+						<iframe src="https://www.youtube.com/embed/_Tlk6e61E6w?autoplay=1&loop=1&autopause=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+						</iframe>
+					</article>
 
-				
+					<article>
+						<h2 class="h2">Depressão e Transtorno no mercado de trabalho</h2>
+						<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Depressão ou transtorno depressivo é uma doença comum e séria, normalmente é causada por
+							alguma situação perturbadora ou estressante que ocorre na vida, como morte de um familiar, problemas financeiros ou divórcio,
+							pensamentos descontrolados e obsessivos sobre determinada situação ou problema.
+						<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A depressão é responsável por retirar do mercado de trabalho milhares de profissionais todos os anos. Em 2016, 75,3 mil trabalhadores
+							foram afastados em razão do mal, com direito a recebimento de auxílio-doença em casos episódicos ou recorrentes.</p>
+						<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Eles representaram 37,8% de todas as licenças em 2016.</p>
+						<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dessa forma, pode-se observar facilmente como essa doença impacta no desempenho do profissional. Os profissionais com depressão
+							costumam ter as seguintes características:
+						</p>
 
-			</main>		
+						<ul>
+							<li>Atrasos frequentes,</li>
+							<li>Dificuldade em reter e compreender informações,</li>
+							<li>Memória falha,</li>
+							<li>Percalços para executar tarefas,</li>
+							<li>Desânimo para agir em sua função rotineira,</li>
+							<li>Falta de iniciativa,</li>
+							<li>Faltas frequentes, entre outros problemas.</li>
+						</ul>
+					</article>
 
+					<article>
+						<div>
+							<h2 class="text-center h2">Que tal um PET!</h2>
+							<img src="Imagens\animal sorrindo19.jfif" align="left" style="width: 300px; height: 200px" class="me-3 rounded-3">
 
-	
-			<footer>
-				<p>&copy; Carlos Silva 2021 - Todos os direitos reservados. 
-			</footer>
-		</section>
+							<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Pesquisas e estudos em todo o mundo demonstram que a convivência com os animais traz
+								tranquilidade e bem-estar às pessoas. Alexandre Rossi, especialista em comportamento animal
+								e atualmente com o programa “Missão Pet” no canal a cabo Nat Geo, vivencia de perto essa
+								interação benéfica....</p>
+							<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; O contato com os animais aumenta a produção de endorfina no organismo, o hormônio que causa
+								prazer e sensação de bem-estar. Além disso, o convívio com um cão ou gato diminui a pressão
+								sanguínea, os níveis de colesterol e do estresse e também reduz o risco de problemas
+								cardiovasculares....
+							</p>
+
+						</div>
+					</article>
+				</main>
+				<footer>
+					<p>&copy; Carlos Silva 2021 - Todos os direitos reservados.
+				</footer>
+			</section>
+		</div>
 	</div>
-</div>
 
 </body>
+
 </html>

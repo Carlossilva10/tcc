@@ -258,5 +258,5 @@ submit21.addEventListener('click', function(){
 
 function growProgressBar(percentage_width){
     var bar = document.getElementById("progress_bar");
-    bar.style.width = percentage_width;
+    bar.style.width = percentage_width++;
 }

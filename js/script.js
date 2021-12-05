@@ -8,19 +8,21 @@
 
 
 
-$(document).ready(function () {
-	$(".back2Top").click(function(event) {
+$(function () {
+	$(".back2Top").on('click', function(event) {
         event.preventDefault();
         $("html, body").animate({ scrollTop: 0 }, "slow");
 		$('#stickThis').height("auto");
 		$('body').removeClass('stick');
         return false;
     });
-	$("#menuToggle").click(function(event) {
+
+	$("#menuToggle").on('click', function(event) {
         $("body").toggleClass("sidebarToggle");
 		$("body").removeClass("showMobileMenu");
-    });	
-	$("#mobileMenuToggle").click(function(event) {
+    });
+
+	$("#mobileMenuToggle").on('click', function(event) {
         $("body").toggleClass("showMobileMenu");
 		$("body").removeClass("sidebarToggle");
     });	
@@ -29,10 +31,10 @@ $(document).ready(function () {
 });
 
 function sticktothebottom() {
-    var h = window.innerHeight;
-    var window_top = $(window).scrollTop();
-    var top = $('#stick-here').offset().top;
-    var panelh = $("#stickThis").height();
+    let h = window.innerHeight;
+    let window_top = $(window).scrollTop();
+    let top = $('#stick-here').offset().top;
+    let panelh = $("#stickThis").height();
     if (window_top + h > top) {
 		$('#stickThis').height($('#stickThis').height());
         $('body').addClass('stick');
@@ -41,22 +43,23 @@ function sticktothebottom() {
 		$('body').removeClass('stick');
 	}
 }
+
 $(function() {
-    $(window).scroll(sticktothebottom);
+    $(window).on('scroll', sticktothebottom);
     sticktothebottom();
 });
 
-var modal = document.getElementById('formulario');
+const modal = document.getElementById('formulario');
 
-var btn = document.getElementsByClassName('add_table')[0];
+const btn = document.getElementsByClassName('add_table')[0];
 
-var close = document.getElementsByClassName("close")[0];
+const close = document.getElementsByClassName("close")[0];
 
-var edit = document.getElementsByClassName("fa fa-pencil-square-o");
+const edit = document.getElementsByClassName("fa fa-pencil-square-o");
 
-var input = document.getElementsByTagName("input");
+const input = document.getElementsByTagName("input");
 
-var option = document.getElementsByTagName("option");
+const option = document.getElementsByTagName("option");
 
 function clearContents(){
     modal.style.top = "-200%";
@@ -72,10 +75,10 @@ function clearContents(){
     }
  }
 
-btn.onclick = function() {
+btn.onclick(function() {
     modal.style.zIndex = 1;modal.style.top = 0;
     modal.style.background = "rgba(0,0,0,0.8)";
-}
+})
 
 close.onclick = function() {
 	clearContents();
@@ -85,5 +88,4 @@ window.onclick = function(event) {
     if (event.target == modal) {
         clearContents();
     }
-
 }
