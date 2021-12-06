@@ -1,3 +1,37 @@
+<?php
+
+session_start();
+    include_once('config.php');
+    // print_r($_SESSION);
+    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
+    {
+        unset($_SESSION['email']);
+        unset($_SESSION['senha']);
+        header('Location: login.php');
+    }
+    $logado = $_SESSION['email'];
+    $sql = "SELECT * FROM usuarios ORDER BY id DESC";
+    $result = $conexao->query($sql);
+
+	if (isset($_POST['submit'])) {
+
+		// print_r('cidade: ' . $_POST['cidade']);
+
+		include_once('config.php');
+
+		$totalscore = $_POST['totalscore'];
+		$scoreinfo = $_POST['scoreinfo'];
+
+		$result = mysqli_query(
+			$conexao,
+			"INSERT INTO questionario(totalscore,scoreinfo) 
+		 VALUES ('$totalscore','$scoreinfo') "
+		);
+	}
+
+
+	?>
+
 <!doctype html>
 <html lang="en" class="no-js">
 
@@ -39,30 +73,45 @@
 </head>
 
 <body>
-	<?php
 
-	if (isset($_POST['submit'])) {
+<header>
+	
 
-		// print_r('cidade: ' . $_POST['cidade']);
-
-		include_once('config.php');
-
-		$totalscore = $_POST['totalscore'];
-		$scoreinfo = $_POST['scoreinfo'];
-
-		$result = mysqli_query(
-			$conexao,
-			"INSERT INTO questionario(totalscore,scoreinfo) 
-		 VALUES ('$totalscore','$scoreinfo') "
-		);
-	}
+	<div id="header Left">
+		<img src="Imagens\bomhumor.png"  width="210" height="140" align= "left"> <br/>
+		<h1><a href= "http://localhost/TCC/login.php">
+			<div height="100" style="background-color: blue;line-height: 50px;text-align: right;">
+				<p style="color: white">Login</p>
+			</div>
+			</a> </h1
+	</div
 
 
-	?>
+		<div id="headerRight">
+			<nav>  
+				<ul>
+					 
+					<li><a href="http://localhost/TCC/index.php">Home</a></li>
+					<li><a href="http://localhost/TCC/Homem.html">Homem</a></li>
+					<li><a href="http://localhost/TCC/Mulher.html">Mulher</a></li>
+					<li><a href="http://localhost/TCC/Adolecente.html">Adolecente</a></li>
+					<li><a href="http://localhost/TCC/cadastro.php">Cadastro</a></li>
+					<li><a href="http://localhost/TCC/Depoimentos.html">Depoimentos</a></li>
+					<li><a href="http://localhost/TCC/Especialista.html">Especialista</a></li>
+                	<li><a href="http://localhost/TCC/Perguntas.html">Perguntas Frequentes</a></li>
+                	<li><a href="http://localhost/TCC/Atividades.html">Atividades</a></li>
+					<li><a href="http://localhost/TCC/Livros.html">Livros</a></li>
+					<li><a href="http://localhost/TCC/Frases.html">Frases Motivadoras</a></li>
+					<li><a href="http://localhost/TCC/Imagens.html">Imagens divertidas</a></li>
+					<li><a href="http://localhost/TCC/Alimentos.html">Alimentos</a></li>
+					<li><a href="http://localhost/TCC/Atendimento.html">Atendimento</a></li>
+					<li><a href="http://localhost/TCC/Links.html">Links Úteis</a></li>
+					
+					
+				</ul>
+	</div>
 
-	<?php
-	include './Navbar.php';
-	?>
+</header>
 
 	<div id="wrapall">
 
@@ -90,85 +139,90 @@
 							<aside>
 
 								<div>
-									<!-- <img src="Imagens\cadastro.jfif"  width="260" class="rounded-3">
-					 -->
+									
+					
 
 									<div height="100" textSize="150px text-align: left;">
 
+									<nav>
+										<ul>
+											<li><a href="" class="btn btn-light mt-2"><h4>Faça sua consulta:</h4></a></li>
+										</ul>
+									</nav>
+									<br/>
+
 										<ul class="nav justify-content-center">
 											<li class="nav-item mb-2">
-												<a href="" class="btn btn-outline-light">
-													Resultados anteriores
+												<a href="./ResultadoAnterior.html" class="btn btn-outline-light">
+													Resultado Anterior
 												</a>
 											</li>
 											<br>
 											<li class="nav-item mb-2">
-												<a href="" class="btn btn-outline-light">
-													Resultados anteriores
+												<a href="./TodosResultados.html" class="btn btn-outline-light">
+													Todos Resultados
 												</a>
 											</li>
 											<br>
 											<li class="nav-item mb-2">
-												<a href="" class="btn btn-outline-light">
-													Resultados anteriores
+												<a href="./ResultadosGrafico.html" class="btn btn-outline-light">
+													Resultados em grafico
 												</a>
 											</li>
 											<br>
 											<li class="nav-item">
-												<a href="" class="btn btn-outline-light">
-													Resultados anteriores
+												<a href="./DownloadsResultados.html" class="btn btn-outline-light">
+													Downloads dos Resultados
 												</a>
 											</li>
 										</ul>
 									</div>
 
-									<nav>
-										<ul>
-											<li><a href="http://localhost/TCC/cadastro.php" class="btn btn-light mt-2">Faça aqui seu Cadastro</a></li>
-										</ul>
-									</nav>
+									
 								</div>
 
 								<div>
-									<img src="Imagens\Medico1.jfif" width="260" class="rounded-3">
-									<nav>
-										<ul>
-											<li><a href="http://localhost/TCC/Especialista.html" class="btn btn-light mt-2">Procure um especialista</a></li>
-										</ul>
-									</nav>
-								</div>
-
-								<div>
-									<img src="Imagens\Depoimento2.jfif" width="260" class="rounded-3">
-									<nav>
-										<ul>
-											<li><a href="http://localhost/TCC/Depoimentos.html" class="btn btn-light mt-2">Depoimentos</a></li>
-										</ul>
-									</nav>
-								</div>
-
-								<div>
-									<img src="Imagens\Livro1.jfif" width="260" class="rounded-3">
-									<nav>
-										<ul>
-											<li><a href="http://localhost/TCC/Livros.html" class="btn btn-light mt-2">Encontre um livro</a></li>
-										</ul>
-									</nav>
-								</div>
-
-								<div>
-									<a href="http://localhost/TCC/Atendimento.html"><img src="Imagens\informação188.jpg" width="260" class="rounded-3"></a>
-
-								</div>
-
-								<p><a class="back2Top" href="#">⮝&nbsp;Back to&nbsp;top&nbsp;⮝</a></p>
-
-
-							</aside>
+							<img src="Imagens\Medico1.jfif" width="260" class="text-end rounded-3">
+							<nav>
+								<ul>
+									<li><a href="./Especialista.html" class="btn btn-light mt-2">Procure um especialista</a></li>
+								</ul>
+							</nav>
 						</div>
-					</div>
-					<div id="stick-here"></div>
+
+						<div>
+							<img src="Imagens\Depoimento2.jfif" width="260" class="text-end rounded-3">
+							<nav>
+								<ul>
+									<li><a href="./Depoimentos.html" class="btn btn-light mt-2">Depoimentos</a></li>
+								</ul>
+							</nav>
+						</div>
+
+						<div>
+							<img src="Imagens\Livro1.jfif" width="260" class="text-end rounded-3">
+							<nav>
+								<ul>
+									<li><a href="./Livros.html" class="btn btn-light mt-2">Encontre um livro</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div>
+							<a href="./Atendimento.html">
+								<img src="Imagens\informação188.jpg" width="260" class="text-end rounded-3"></a>
+						</div>
+
+						<p class="mb-2">
+							<a class="back2Top" href="#">
+								⮝&nbsp;Back to&nbsp;top&nbsp;⮝
+							</a>
+						</p>
+					</aside>
 				</div>
+			</div>
+			<div id="stick-here"></div>
+		</div>
+<br>
 
 				<div id="main">
 					<section id="page">
@@ -179,7 +233,7 @@
 									<h2 class="h4">QUESTIONÁRIO DASS-21</h2>
 								</center>
 
-								<strong>
+								
 									<p>
 										&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Trata-se de um questionário com 21 perguntas, que medem a intensidade de
 										comportamentos e sensações experimentados nos últimos sete dias. Cada pergunta é classificada em uma escala Likert
@@ -187,7 +241,7 @@
 										intenção de enfatizar os estados emocionais sobre os traços.
 									</p>
 
-								</strong>
+								
 							</article>
 
 							<article>
@@ -203,11 +257,13 @@
 									- Aplicado a mim muito, ou na maioria das vezes</h4>
 
 							</article>
+							<br/><br/>
 
 							<div class="container">
 								<div class="row">
 									<div class="two-thirds column">
 										<h2 class="h4">Questionário Dass-21</h2>
+										<br/><br/>
 
 										<div id="progress_bar"></div>
 										<form class="questions_box">
@@ -289,17 +345,6 @@
 												<div class="clearfix"></div>
 											</div>
 
-											<div id="question-7" class="mt-3">
-												<h2 class="h4">Questão 7</h2>
-												<h3>Senti tremores (por exemplo, nas mãos)</h3>
-												<input id="question-7-answer-a" type="radio" class="form-check-input" name="favelang" value=1> Não se aplica a mim de forma alguma<br>
-												<input id="question-7-answer-b" type="radio" class="form-check-input" name="favelang" value=2> Aplicado a mim até certo ponto, ou por algum tempo<br>
-												<input id="question-7-answer-c" type="radio" class="form-check-input" name="favelang" value=3> Aplicado a mim em um grau considerável, ou uma boa parte do tempo<br>
-												<input id="question-7-answer-d" type="radio" class="form-check-input" name="favelang" value=4> Aplicado a mim muito, ou na maioria das vezes<br>
-												<div id="submit7" class="button">Enviar Resposta</div>
-												<div class="clearfix"></div>
-											</div>
-
 											<div id="question-8" class="mt-3">
 												<h2 class="h4">Questão 8</h2>
 												<h3>Eu senti que estava usando muita energia nervosa</h3>
@@ -324,6 +369,7 @@
 
 											<div id="question-10" class="mt-3">
 												<h2 class="h4">Questão 10</h2>
+												<h3>Senti que não tinha nada a desejar</h3> 
 												<input id="question-10-answer-a" type="radio" class="form-check-input" name="favelang" value=1> Não se aplica a mim de forma alguma<br>
 												<input id="question-10-answer-b" type="radio" class="form-check-input" name="favelang" value=2> Aplicado a mim até certo ponto, ou por algum tempo<br>
 												<input id="question-10-answer-c" type="radio" class="form-check-input" name="favelang" value=3> Aplicado a mim em um grau considerável, ou uma boa parte do tempo<br>
@@ -467,6 +513,8 @@
 							</div>
 							<script src="js/scriptsQ.js"></script>
 						</main>
+
+						<br/><br/><br/><br/><br/><br/><br/><br/>
 						<footer class="mt-3">
 							<p>&copy; Carlos Silva 2021 - Todos os direitos reservados.
 						</footer>

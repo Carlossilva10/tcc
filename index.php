@@ -1,28 +1,64 @@
 <!doctype html>
 <html lang="en" class="no-js">
-
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Simple Website Template with Sticky Sidebar</title>
-	<meta name="description" content="Free responsive website HTML theme with sticky sidebar for both desktop and mobile. ">
-	<!-- Importante para habilitar os recursos de Responsividade em conjunto com o CSS -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website Template with Sticky Sidebar</title>
+    <meta name="description" content="Free responsive website HTML theme with sticky sidebar for both desktop and mobile. ">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 
-	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="./css/style.css">
+<!-- Importante para habilitar os recursos de Responsividade em conjunto com o CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+  		        
+  		<link rel="stylesheet" href="css/bootstrap.css">
 
-	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-	<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="js/script.js"></script>
 </head>
-
 <body>
-	<?php
-	include './Navbar.php';
-	?>
+<header>
+	
+
+	<div id="header Left">
+		<img src="Imagens\bomhumor.png"  width="210" height="150" align= "left"> <br/> <br/>
+		<h1><a href= "http://localhost/TCC/login.php">
+			<div height="100" style="background-color: blue;line-height: 50px;text-align: right;">
+				<p style="color: white">Login</p>
+			</div>
+			</a> </h1
+	</div
+
+
+		<div id="headerRight">
+			<nav>  
+				<ul>
+					 
+					
+					<li><a href="http://localhost/TCC/Homem.html">Homem</a></li>
+					<li><a href="http://localhost/TCC/Mulher.html">Mulher</a></li>
+					<li><a href="http://localhost/TCC/Adolecente.html">Adolecente</a></li>
+					<li><a href="http://localhost/TCC/cadastro.php">Cadastro</a></li>
+					<li><a href="http://localhost/TCC/Depoimentos.html">Depoimentos</a></li>
+					<li><a href="http://localhost/TCC/Especialista.html">Especialista</a></li>
+                	<li><a href="http://localhost/TCC/Perguntas.html">Perguntas Frequentes</a></li>
+                	<li><a href="http://localhost/TCC/Atividades.html">Atividades</a></li>
+					<li><a href="http://localhost/TCC/Livros.html">Livros</a></li>
+					<li><a href="http://localhost/TCC/Frases.html">Frases Motivadoras</a></li>
+					<li><a href="http://localhost/TCC/Imagens.html">Imagens divertidas</a></li>
+					<li><a href="http://localhost/TCC/Alimentos.html">Alimentos</a></li>
+					<li><a href="http://localhost/TCC/Atendimento.html">Atendimento</a></li>
+					<li><a href="http://localhost/TCC/Links.html">Links Úteis</a></li>
+					<li><a href="http://localhost/TCC/login.php">Questionário DASS-21</a></li>
+					
+					
+				</ul>
+	</div>
+
+</header>
 	<div id="wrapall">
 		<div id="sidebar">
 			<div id="stickThis">
@@ -80,13 +116,13 @@
 			</div>
 			<div id="stick-here"></div>
 		</div>
-
+<br>
 		<div id="main">
 			<section id="page">
 				<main>
 					<article>
-						<h1 class="h1">O site que te leva ao BOM HUMOR</h1>
-
+						<center><h1 class="h1">O site que te leva ao BOM HUMOR</h1></center>
+						<br>
 						<p>
 							&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; O site Bom humor é composto de páginas que trazem conteúdos de leitura e audio através de poemas, frases motivadoras, músicas e imagens com leveza visual.
 						</p>

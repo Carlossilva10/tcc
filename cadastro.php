@@ -108,32 +108,33 @@ VALUES ('$nome','$email','$senha','$sexo','$data_nasc','$cidade','$estado') ");
 
 	<div id="header Left">
 		<img src="Imagens\bomhumor.png"  width="210" height="150" align= "left"> <br/> <br/>
-		<h1><a href= "login.html">
+		<h1><a href= "http://localhost/TCC/login.php">
 			<div height="100" style="background-color: blue;line-height: 50px;text-align: right;">
 				<p style="color: white">Login</p>
 			</div>
 			</a> </h1
-</div
+	</div
 
 
 		<div id="headerRight">
 			<nav>  
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="Homem.html">Homem</a></li>
-					<li><a href="Mulher.html">Mulher</a></li> 
-					<li><a href="Adolecente.html">Adolecente</a></li>
-					<li><a href="Depoimentos.html">Depoimentos</a></li>
-					<li><a href="Especialista.html">Especialista</a></li>
-                	<li><a href="Perguntas.html">Perguntas Frequentes</a></li>
-                	<li><a href="Atividades.html">Atividades</a></li>
-					<li><a href="Livros.html">Livros</a></li>
-					<li><a href="Frases.html">Frases Motivadoras</a></li>
-					<li><a href="Imagens.html">Imagens divertidas</a></li>
-					<li><a href="Alimentos.html">Alimentos</a></li>
-					<li><a href="Atendimento.html">Atendimento</a></li>
-					<li><a href="Links.html">Links Úteis</a></li>
-					<li><a href="http://localhost/TCC/login.html">Questionário DASS-21</a></li>
+					 
+                    <li><a href="http://localhost/TCC/index.php">Home</a></li>
+					<li><a href="http://localhost/TCC/Homem.html">Homem</a></li>
+					<li><a href="http://localhost/TCC/Mulher.html">Mulher</a></li>
+					<li><a href="http://localhost/TCC/Adolecente.html">Adolecente</a></li>
+					<li><a href="http://localhost/TCC/Depoimentos.html">Depoimentos</a></li>
+					<li><a href="http://localhost/TCC/Especialista.html">Especialista</a></li>
+                	<li><a href="http://localhost/TCC/Perguntas.html">Perguntas Frequentes</a></li>
+                	<li><a href="http://localhost/TCC/Atividades.html">Atividades</a></li>
+					<li><a href="http://localhost/TCC/Livros.html">Livros</a></li>
+					<li><a href="http://localhost/TCC/Frases.html">Frases Motivadoras</a></li>
+					<li><a href="http://localhost/TCC/Imagens.html">Imagens divertidas</a></li>
+					<li><a href="http://localhost/TCC/Alimentos.html">Alimentos</a></li>
+					<li><a href="http://localhost/TCC/Atendimento.html">Atendimento</a></li>
+					<li><a href="http://localhost/TCC/Links.html">Links Úteis</a></li>
+					<li><a href="http://localhost/TCC/login.php">Questionário DASS-21</a></li>
 					
 					
 				</ul>

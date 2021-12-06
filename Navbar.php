@@ -6,6 +6,7 @@
       </a>
       <nav class="col-8">
         <ul class="nav col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="./index.php">Home</a></li>
           <li><a href="./Homem.html">Homem</a></li>
           <li><a href="./Mulher.html">Mulher</a></li>
           <li><a href="./Adolecente.html">Adolecente</a></li>
@@ -20,7 +21,7 @@
           <li><a href="./Alimentos.html">Alimentos</a></li>
           <li><a href="./Atendimento.html">Atendimento</a></li>
           <li><a href="./Links.html">Links Úteis</a></li>
-          <li><a href="./questionarioLogin.php">Questionário DASS-21</a></li>
+          <li><a href="./login.php">Questionário DASS-21</a></li>
         </ul>
       </nav>
       <h1>
